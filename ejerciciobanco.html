@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario banco</h1>
+<form>
+
+    <label for="usuario">Nombre de usuario</label>
+    <input type="text" id="usuario" name="usuario">
+    <br>
+    <br>
+
+    <label for="psw">Password:</label>
+    <input type="password" name="psw">
+    <br>
+    <br>
+
+    <input type="submit" value="Enviar">
+    <br>
+    <br>
+    
+
+<hr><br>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    
+
+    <label for="apellidos">Apellidos</label>
+    <input type="text" id="apellidos" name="apellidos">
+    <br>
+    <br>
+
+    <label for="telefono">Teléfono</label>
+    <input type="text" id="telefono" name="telefono">
+    <br>
+    <br>
+
+    <input type="radio" name="genero" value="hombre">
+    <label for="genero">Hombre</label>
+
+    <input type="radio" name="genero" value="mujer">
+    <label for="genero">Mujer</label>
+
+    <input checked="checked" type="radio" name="genero" value="otro">
+    <label for="genero">No binomial</label>
+    <br>
+    <br>
+
+    <label for="email">Correo electrónico</label>
+    <input type="text" id="email" name="email">
+    <br>
+    <br>
+
+    <label for="bday1"> Fecha de nacimiento:</label>
+    <input type="date" name="bday1" max="1979-12-31">
+  
+    <br>
+    <br>
+
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" min="0" max="120">
+    <br>
+    <br>
+
+    <label for="postal">Código postal</label>
+    <input type="number" name="postal" min="0" max="99999">
+    <br>
+    <br>
+
+    <hr><br>
+
+    <h4>Indique sus hobbies y haz una descripción de los mismos</h4>
+
+    <textarea name="hobbies" rows="3" cols="30" placeholder="Escriba sus hobbies"></textarea>
+        <br>
+        <br>
+        
+    <h4>Sube aquí tu foto</h4>
+
+        <input name="foto" type="file">
+        <br>
+        <br>
+
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Este patrón de código sirve para hacer las líneas que forman la tabla-->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+            /* Une borde adyadcentes */
+            border-collapse: collapse;
+
+            /* Espacio entre el contenido y los bordes */
+            padding: 15px;
+
+            /* Alineación al centro (por defecto es a la izquierda) */
+            text-align: center;
+
+            /* Espacio entre celdas */
+            border-spacing: 5px;
+        }
+    </style>
+
+    <!--Aquí está el contenido de la tabla-->
+    <table>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- La tabla ejercicio con colspan (para unir celdas de diferentes columnas) y rowspan (para unir celdas de diferentes filas)-->
+    <table>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">2 y 3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td rowspan="3">5, 9 y 13</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td colspan="3">14, 15 y 16</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<!-- Otra manera mas rápida de hacer la tabla es con este codigo table>tbody>tr*4>td*4-->
+</html>
